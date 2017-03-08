@@ -24,10 +24,10 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        testRemoveDeliverdNotice()
+        testRemoveDeliverdNotice()
         testAll()
-//        testInAppApproval()
-//        testInAppApprovalDetail()
+        testInAppApproval()
+        testInAppApprovalDetail()
     }
     
     // 本地通知基础
