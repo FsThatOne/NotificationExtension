@@ -150,9 +150,9 @@ class ViewController: UIViewController {
         let path = Bundle.main.path(forResource: "wwdc17", ofType: "jpg")
         let url = URL(fileURLWithPath: path!)
         let attach = try! UNNotificationAttachment(identifier: "", url: url, options: [
-//            UNNotificationAttachmentOptionsTypeHintKey: kUTTypeImage, // 提示附件类型
-//            UNNotificationAttachmentOptionsThumbnailHiddenKey: false, // 通知放大后是否隐藏原有通知,default = true,隐藏
-//            UNNotificationAttachmentOptionsThumbnailTimeKey: 3, // 用于类型的附件,可以设置某个时间的一帧作为缩略图
+            UNNotificationAttachmentOptionsTypeHintKey: kUTTypeImage, // 提示附件类型
+            UNNotificationAttachmentOptionsThumbnailHiddenKey: false, // 通知放大后是否隐藏原有通知,default = true,隐藏
+            UNNotificationAttachmentOptionsThumbnailTimeKey: 3, // 用于类型的附件,可以设置某个时间的一帧作为缩略图
             UNNotificationAttachmentOptionsThumbnailClippingRectKey: CGRect(dictionaryRepresentation: CGRect(x: 0.5, y: 0.5, width: 0.25, height: 0.25).dictionaryRepresentation)!
             // 这个需要特别讲解一下,详见PPT
             ])
